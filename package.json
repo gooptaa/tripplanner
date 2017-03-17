@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "start:production": "node index.js",
+    "start:dev": "nodemon -e html,css,js index.js",
+    "start": "npm run start:dev",
+    "build:css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
   },
   "keywords": [],
   "author": "",
@@ -13,7 +16,9 @@
   "dependencies": {
     "bluebird": "^3.5.0",
     "body-parser": "^1.17.1",
+    "bootstrap": "^3.3.7",
     "express": "^4.15.2",
+    "jquery": "^3.2.0",
     "nunjucks": "^3.0.0",
     "pg": "^6.1.4",
     "pg-hstore": "^2.3.2",
@@ -21,6 +26,7 @@
     "volleyball": "^1.4.1"
   },
   "devDependencies": {
+    "node-sass": "^4.5.0",
     "nodemon": "^1.11.0"
   }
 }

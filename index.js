@@ -14,6 +14,8 @@ app.use(volleyball)
 const env = nunjucks.configure('views', {noCache: true});
 
 app.use(express.static('./public'))
+app.use('/bootstrap', express.static('./node_modules/bootstrap/dist'))
+app.use('/jquery', express.static('./node_modules/jquery/dist'))
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
