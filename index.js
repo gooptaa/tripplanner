@@ -12,6 +12,8 @@ app.use(bodyParser.json()); // would be for AJAX requests
 app.use(volleyball)
 
 const env = nunjucks.configure('views', {noCache: true});
+
+app.use(express.static('./public'))
 app.set('view engine', 'html');
 app.engine('html', nunjucks.render);
 
