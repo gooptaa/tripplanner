@@ -1,6 +1,7 @@
 .navbar {
   padding: 0 40px;
-  background-color: #ddd; }
+  background-color: #ddd;
+  margin-bottom: 20px; }
   .navbar a {
     color: #444;
     text-decoration: none; }
@@ -15,7 +16,6 @@
     color: #bbbbbb; }
 
 .navbar-brand {
-  float: left;
   font-size: 1.2em;
   margin-top: 13px; }
 

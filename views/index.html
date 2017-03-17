@@ -4,22 +4,22 @@
 {% block title %}Your Trip{% endblock %}
 
 {% block content %}
-<div id="app" class="clearfix">
+<div id="app">
   <h1>Hello, I am the app!</h1>
 </div>
 
 <h1>This is our home page</h1>
 <ul>
     <h1>HOTELS</h1>
-    {% for hotel in results[0]%} 
+    {% for hotel in results[0]%}
         <li>{{hotel.name}}</li>
     {% endfor %}
     <h1>ACTIVITIES</h1>
-    {% for activity in results[1]%} 
+    {% for activity in results[1]%}
         <li>{{activity.name}}</li>
     {% endfor %}
     <h1>RESTAURANTS</h1>
-    {% for restaurants in results[2]%} 
+    {% for restaurants in results[2]%}
         <li>{{restaurants.name}}</li>
     {% endfor %}
 </ul>
